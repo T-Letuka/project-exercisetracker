@@ -60,7 +60,7 @@ app.post("/api/users/:_id/exercises", async (req, res) => {
       res.json({
         _id: user._id,
         username: user.username,
-        description: Exercise.description,
+        description: exercises.description,
         duration: exercises.duration,
         date: new Date(exercises.date).toDateString(),
       });
